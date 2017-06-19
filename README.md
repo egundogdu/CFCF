@@ -19,6 +19,8 @@ The detailed information is available in [1] that details the feature learning f
 
 
 [1] Erhan Gundogdu and A. Aydin Alatan. “Good Features to Correlate for Visual Tracking.” arXiv (2017)
+
 [2] M. Danelljan, A. Robinson, F. Shahbaz Khan, and M. Felsberg, “Beyond correlation filters: Learning continuous convolution operators for visual tracking,” in ECCV, 2016.
+
 [3] K. Chatfield, K. Simonyan, A. Vedaldi, and A. Zisserman. Return of the devil in the details: Delving deep into
 convolutional nets. In BMVC. BMVA Press, 2014.
