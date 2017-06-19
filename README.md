@@ -15,7 +15,8 @@ If you use our code or tracking results, please cite:
 
 The two .zip files are the results of OTB-2015 OPE and VOT2016 baseline.
 Please note that VOT2016 is run only for one repetition since the tracker is deterministic.
-The detailed information is available in [1] that details the feature learning framework CFCF and how it is integrated to C-COT [2]. For fair comparisons, the only changing feature type (w.r.t. C-COT) is the learned CFCF features which are extracted from the fine-tuned VGG-M-2048 network in [3]. Similarly, the additional features are utilized for VOT2016 experiments and the VOT2016 settings of C-COT can be found in https://github.com/martin-danelljan/Continuous-ConvOp. 
+The detailed information is available in [1] that details the feature learning framework CFCF and how it is integrated to C-COT [2]. For fair comparisons, the only changing feature type (w.r.t. C-COT) is the learned CFCF features which are extracted from the fine-tuned VGG-M-2048 network in [3]. 
+Similarly, the additional features are utilized for VOT2016 experiments as in C-COT and the VOT2016 settings of C-COT can be found in https://github.com/martin-danelljan/Continuous-ConvOp. 
 
 
 [1] Erhan Gundogdu and A. Aydin Alatan. “Good Features to Correlate for Visual Tracking.” arXiv (2017)
