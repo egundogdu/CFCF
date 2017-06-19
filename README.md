@@ -1,4 +1,5 @@
 Author: Erhan Gundogdu
+
 Contact Info: egundogdu87@gmail.com
 
 Foreword: The code to train a fully CNN network [1] will be made available along with the pre-trained fine-tuned network model VGG-M-2048 [3] soon.
