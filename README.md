@@ -1,4 +1,4 @@
-Author: Erhan Gundogdu
+Author: Erhan Gundogdu and A. Aydın Alatan
 
 Contact Info: egundogdu87@gmail.com
 
