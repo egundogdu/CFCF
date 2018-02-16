@@ -2,7 +2,7 @@ Author: Erhan Gundogdu and A. Aydın Alatan
 
 Contact Info: egundogdu87@gmail.com
 
-Foreword: The code to train a fully CNN network [1] will be made available soon.
+Foreword: The code to train a fully CNN network [1] is now available here!
 
 If you use our code or tracking results, please cite:
 
