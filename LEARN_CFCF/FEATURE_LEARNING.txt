@@ -1,0 +1,50 @@
+Author: Erhan Gundogdu
+Contact Info: egundogdu87@gmail.com
+
+If you use our code or tracking results, please cite:
+
+	@misc{1704.06326,
+	Author = {Erhan Gundogdu and A. Aydin Alatan},
+	Title = {Good Features to Correlate for Visual Tracking},
+	Year = {2017},
+	Eprint = {arXiv:1704.06326},
+	}
+
+To generate the dataset, one should follow the instructions below:
+	(1) After signing up ILSVRC from "http://image-net.org/challenges/LSVRC/2015/signup", 
+	download the full dataset (around 85GB).
+
+	(2) Arrange the training part of the dataset as follows:
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Data/VID/train/ILSVRC2015_VID_train_0000;
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Data/VID/train/ILSVRC2015_VID_train_0001;
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Data/VID/train/ILSVRC2015_VID_train_0002;
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Data/VID/train/ILSVRC2015_VID_train_0003;
+
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Annotations/VID/train/ILSVRC2015_VID_train_0000/';
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Annotations/VID/train/ILSVRC2015_VID_train_0001/';
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Annotations/VID/train/ILSVRC2015_VID_train_0002/';
+		YOURLOCAL/ILSVRC_VID/ILSVRC/Annotations/VID/train/ILSVRC2015_VID_train_0003/';
+
+	(4) Create an output folder for the imdb files as IMDB_ILSVRC in the current directory for the next step.
+
+	(5) Run generateIMDB_ILSVRC.m after arranging the paths as in the previous step.
+
+To fine-tune the imagenet-vgg-m-2048 network, follow the instructions below:
+
+	(1) Download the MatConvNet library from http://www.vlfeat.org/matconvnet/
+	We advise you to download 1.0-beta20 or 1.0-beta23 since the training of the network is verified in these versions.
+	And additionally download the network model to be fine-tuned from "http://www.vlfeat.org/matconvnet/pretrained/"
+	
+	(2) Although we are using vl_simplenn2.m function to forward and backward propagate the data through the network, 
+	one should double check the existence of possible version differences of functions regarding the layer type, such as vl_nnconv etc.
+
+	(3) Go to your workspace where the folder includes the provided .m files. Create a folder named 'exp_vgg_finetuned'.
+	Inside CFCF_train.m, replace your local path with YOURLOCAL and run DCFCF_VGG_Fine_Tuned.m to start training.
+
+References:
+[1] Erhan Gundogdu and A. Aydin Alatan. “Good Features to Correlate for Visual Tracking.” arXiv (2017)
+[2] A. Vedaldi and K. Lenc, “Matconvnet – convolutinoal neural networks for matlab,” in Int. Conf. on Multimedia, ACM, 2015.
+[3] L. Bertinetto, J. Valmadre, J. F. Henriques, A. Vedaldi, and P. Torr, “Fully-convolutional siamese networks for object tracking,” arXiv, 2016.
+
+
+
