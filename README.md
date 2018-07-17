@@ -19,6 +19,8 @@ doi={10.1109/TIP.2018.2806280},
 ISSN={1057-7149},
 month={},}
 
+**News: CFCF has now a TensorFlow implementation, please check https://github.com/xyukiono/tf-tracking**
+
 EXPERIMENTAL RESULTS:
 The two .zip files are the results of OTB-2015 OPE and VOT2016 baseline.
 Please note that VOT2016 is run only for one repetition since the tracker is deterministic.
